@@ -20,11 +20,15 @@ function populateBoard(size){
 
 populateBoard(32);
 
+let inputs = document.querySelector(".error")
 function changeSize(input){
-  if(input >= 2 || input <= 100){
+  if(input >= 2 && input <= 100){
 populateBoard(input)
   }
-  
+else{
+  populateBoard(0)
+  inputs.textContent = "Not a valid number"
+}
 }
 
 function colorSquare(){
