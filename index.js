@@ -24,12 +24,14 @@ let inputs = document.querySelector(".error")
 function changeSize(input){
   if(input >= 2 && input <= 100){
 populateBoard(input)
+    inputs.classList.remove("visible")
   }
 else{
   populateBoard(0)
+  inputs.classList.add("visible")
   inputs.textContent = "Not a valid number"
 }
-}
+}}
 
 function colorSquare(){
   if(click){
