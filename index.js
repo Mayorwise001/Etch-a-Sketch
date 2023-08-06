@@ -31,7 +31,7 @@ else{
   inputs.classList.add("visible")
   inputs.textContent = "Not a valid number"
 }
-}}
+}
 
 function colorSquare(){
   if(click){
